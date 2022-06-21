@@ -87,16 +87,6 @@ func (s *SnapshotCreateCustomOpts) Reader() io.Reader {
 	return bytes.NewReader(dataRaw)
 }
 
-type SnapshotCreateResponse struct {
-	Id   string   `json:"id"`
-	Name string   `json:"name"`
-	Tags []string `json:"tags"`
-}
-
-func (s *SnapshotCreateResponse) String() string {
-	return fmt.Sprintf("IMAGE -> %s : %s", s.Id, s.Name)
-}
-
 func createNewSnapshot(c *godo.Client, ctx context.Context, volumeUUID, apiKey string) error {
 	backup_name := fmt.Sprintf("bw-data-snapshot-%s", strings.Split(uuid.NewString(), "-")[0])
 	data := &SnapshotCreateCustomOpts{
