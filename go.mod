@@ -4,7 +4,6 @@ go 1.17
 
 require (
 	github.com/digitalocean/godo v1.81.0
-	github.com/gofrs/uuid v4.2.0+incompatible
 	github.com/google/uuid v1.3.0
 )
 
