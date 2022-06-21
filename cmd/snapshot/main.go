@@ -115,7 +115,7 @@ func createNewSnapshot(c *godo.Client, ctx context.Context, volumeUUID, apiKey s
 	}
 	defer resp.Body.Close()
 
-	if !strings.Contains(resp.Status, "200") {
+	if !strings.Contains(resp.Status, "200") || !strings.Contains(resp.Status, "201") {
 		log.Fatalf("failed to create new snapshot: %s", resp.Status)
 	}
 
