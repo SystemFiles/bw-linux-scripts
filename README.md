@@ -8,6 +8,8 @@ Useful script(s) to make my life easier
 make install
 ```
 
+or just take one from the [pre-compiled binaries](/bin/)
+
 ## usage
 
 ```bash
