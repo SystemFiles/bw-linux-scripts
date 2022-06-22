@@ -5,10 +5,8 @@ Useful script(s) to make my life easier
 ## installation
 
 ```bash
-make install
+curl -sSL -o LOCAL_INSTALL.sh https://raw.githubusercontent.com/SystemFiles/bw-linux-scripts/master/INSTALL.sh && bash LOCAL_INSTALL.sh
 ```
-
-or just take one from the [pre-compiled binaries](/bin/)
 
 ## usage
 

@@ -21,7 +21,7 @@ type Secrets struct {
 
 func NewSecrets() Secrets {
 	home, _ := os.UserHomeDir()
-	configPath := path.Join(home, ".config/bw-snapshot")
+	configPath := path.Join(home, ".config/bw-linux-scripts")
 	secretsFile := path.Join(configPath, "secrets.json")
 
 	if fi, err := os.Stat(configPath); err != nil || !fi.IsDir() {

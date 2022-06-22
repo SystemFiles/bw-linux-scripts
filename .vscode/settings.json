@@ -1,0 +1,5 @@
+{
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "file:///Users/bensykes/Documents/GitHub-Projects/bw-linux-scripts/.github/workflows/deploy.yml"
+  }
+}
