@@ -8,6 +8,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+## [ 0.1.4 ] - 2022-6-27 1:42:46
+
+> BENS-0005 Fix Deploy (attempt #3)
+
+### Changed
+
+- `e7c9a31` - BENS-0005 naming binaries properly
+
+
+
 ## [ 0.1.3 ] - 2022-6-27 1:34:54
 
 > BENS-0004 Fix Deploy (attempt #2)
