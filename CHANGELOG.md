@@ -8,6 +8,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+## [ 0.1.3 ] - 2022-6-27 1:34:54
+
+> BENS-0004 Fix Deploy (attempt #2)
+
+### Changed
+
+- `3c6e868` - BENS-0004 removed env from build command custom
+
+
+
 ## [ 0.1.2 ] - 2022-6-27 1:31:53
 
 > BENS-0003 Fixup to Actions
