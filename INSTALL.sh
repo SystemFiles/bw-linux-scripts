@@ -43,17 +43,17 @@ if [[ -z $INSTALL_ARCH ]]; then
 fi
 
 if [[ ! -d "$HOME/bin" ]]; then
-  mkdir "$HOME/bin"
+  mkdir -p "$HOME/bin"
 fi
 
 if [[ ! -d "$HOME/bwtmp" ]]; then
-  mkdir "$HOME/bwtmp"
+  mkdir -p "$HOME/bwtmp"
 fi
 
 for (( i=0; i<${#SCRIPTS[@]}; i++ )); do
-  BIN_NAME=$(echo ${SCRIPT_NAMES[0]} | cut -d'-' -f1 | tr -d '"' | xargs)
+  BIN_NAME=$(echo ${SCRIPT_NAMES[$i]} | cut -d'-' -f1 | tr -d '"' | xargs | awk '{print tolower($0)}')
   cd $HOME/bwtmp
-  curl -sSLO $SCRIPT_URLS[$i]
+  curl -sSLO ${SCRIPT_URLS[$i]}
   tar -zxf ./${SCRIPT_NAMES[$i]}
   mv ./$BIN_NAME $HOME/bin/$BIN_NAME
 done
