@@ -8,6 +8,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+## [ 0.1.5 ] - 2022-6-27 1:48:9
+
+> BENS-0006 Fix Deploy (attempt #4)
+
+### Changed
+
+- `a23ceef` - BENS-0006 Test Build (0)
+
+
+
 ## [ 0.1.4 ] - 2022-6-27 1:42:46
 
 > BENS-0005 Fix Deploy (attempt #3)

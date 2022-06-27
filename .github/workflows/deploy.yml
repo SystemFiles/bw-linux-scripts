@@ -47,6 +47,5 @@ jobs:
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
         asset_name: ${{ matrix.scripts }}-${{ steps.get_version.outputs.VERSION }}-${{ matrix.goos }}-${{ matrix.goarch }}
-        build_command: go build -o bw-${{ matrix.scripts }} ./cmd/${{ matrix.scripts }}
-        binary_name: bw-${{ matrix.scripts }}
+        build_command: go build -o ./bw-${{ matrix.scripts }} ./cmd/${{ matrix.scripts }}
         extra_files: CHANGELOG.md
